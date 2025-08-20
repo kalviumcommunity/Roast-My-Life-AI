@@ -1,0 +1,26 @@
+{
+  "name": "roast-my-life-ai",
+  "version": "1.0.0",
+  "description": "*A viral chatbot that humorously roasts users based on their input (e.g., their job, hobbies, or dating profile) and generates a custom meme/SVG to shame them (in good fun).*",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kalviumcommunity/Roast-My-Life-AI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kalviumcommunity/Roast-My-Life-AI/issues"
+  },
+  "homepage": "https://github.com/kalviumcommunity/Roast-My-Life-AI#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "openai": "^5.13.1"
+  }
+}
