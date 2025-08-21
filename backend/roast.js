@@ -45,6 +45,12 @@ Expected Output:
   "caption": "Pizza > Abs"
 }
 
+DYNAMIC PROMPTING:
+Adapt the roast style based on the user's role. 
+Example: If user says "I'm a teacher", add a roast about homework.  
+If user says "I'm a coder", add a roast about debugging.
+
+
 `;
 
 async function roastUser(input) {
@@ -66,4 +72,4 @@ async function roastUser(input) {
 }
 
 // 👇 Example user input
-roastUser("I am a student who studies only the night before exams");
+roastUser("I'm a software engineer who loves coffee");
