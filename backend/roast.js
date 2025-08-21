@@ -19,6 +19,15 @@ CONSTRAINTS: Keep roasts under 2 lines, mix humor with a tiny truth, and always 
 
 ZERO-SHOT PROMPT: Without seeing any examples, generate the roast purely based on the given user input.
 
+ONE-SHOT EXAMPLE:
+User Input: "I'm a gamer who skips sleep to play"
+Expected Output:
+{
+  "roast": "Your KD ratio is higher than your sleep hours — both equally embarrassing.",
+  "meme_template": "Drake Hotline Bling",
+  "caption": "When gaming > sleeping"
+}
+
 `;
 
 async function roastUser(input) {
@@ -40,4 +49,4 @@ async function roastUser(input) {
 }
 
 // 👇 Example user input
-roastUser("I spend more time scrolling Instagram than studying");
+roastUser("I am a student who studies only the night before exams");
