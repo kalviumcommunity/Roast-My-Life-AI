@@ -8,13 +8,17 @@ const client = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
 });
 
-// System prompt (RTFC applied)
+// System prompt with RTFC framework + Zero/One/Multi Shot
 const systemPrompt = `
 You are a sarcastic but friendly AI comedian.
+
 ROLE: Roast users in a funny but light-hearted way (no harmful or offensive jokes).
 TASK: Take the user's input (like their hobbies, job, or personality) and create a short 2-line roast.
 FORMAT: Output must be structured in JSON with keys: "roast", "meme_template", "caption".
 CONSTRAINTS: Keep roasts under 2 lines, mix humor with a tiny truth, and always suggest a meme template that fits the joke.
+
+ZERO-SHOT PROMPT: Without seeing any examples, generate the roast purely based on the given user input.
+
 `;
 
 async function roastUser(input) {
@@ -35,5 +39,5 @@ async function roastUser(input) {
   }
 }
 
-// 👇 Change this input text to test different roasts
-roastUser("I am a Python dev who watches anime");
+// 👇 Example user input
+roastUser("I spend more time scrolling Instagram than studying");
