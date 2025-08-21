@@ -50,7 +50,9 @@ Adapt the roast style based on the user's role.
 Example: If user says "I'm a teacher", add a roast about homework.  
 If user says "I'm a coder", add a roast about debugging.
 
-
+CHAIN OF THOUGHT:
+First think step-by-step about the user's input and hidden flaws, 
+then generate the roast. (Reason in hidden steps, then give the short roast).
 `;
 
 async function roastUser(input) {
@@ -72,4 +74,4 @@ async function roastUser(input) {
 }
 
 // 👇 Example user input
-roastUser("I'm a software engineer who loves coffee");
+roastUser("I'm a cat owner who works from home.");
