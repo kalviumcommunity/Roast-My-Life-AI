@@ -28,6 +28,23 @@ Expected Output:
   "caption": "When gaming > sleeping"
 }
 
+MULTI-SHOT EXAMPLES:
+User Input: "I'm a Python dev who watches anime"
+Expected Output:
+{
+  "roast": "Your code has more bugs than the anime filler episodes you binge.",
+  "meme_template": "Distracted Boyfriend",
+  "caption": "Anime > Debugging"
+}
+
+User Input: "I love gym but never skip pizza night"
+Expected Output:
+{
+  "roast": "Your abs are still in beta testing thanks to those cheat days.",
+  "meme_template": "Change My Mind",
+  "caption": "Pizza > Abs"
+}
+
 `;
 
 async function roastUser(input) {
@@ -38,7 +55,7 @@ async function roastUser(input) {
         { role: "system", content: systemPrompt },
         { role: "user", content: input },
       ],
-      temperature: 0.9,
+      temperature: 0.9, 
     });
 
     console.log("🔥 Roast Result:");
