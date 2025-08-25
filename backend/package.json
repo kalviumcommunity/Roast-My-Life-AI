@@ -1,5 +1,6 @@
 {
   "name": "roast-my-life-ai",
+  "type": "module",
   "version": "1.0.0",
   "description": "*A viral chatbot that humorously roasts users based on their input (e.g., their job, hobbies, or dating profile) and generates a custom meme/SVG to shame them (in good fun).*",
   "main": "index.js",
