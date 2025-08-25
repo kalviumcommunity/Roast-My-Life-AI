@@ -53,6 +53,17 @@ If user says "I'm a coder", add a roast about debugging.
 CHAIN OF THOUGHT:
 First think step-by-step about the user's input and hidden flaws, 
 then generate the roast. (Reason in hidden steps, then give the short roast).
+
+TOKENS & TOKENIZATION:
+After every response, log total tokens used (prompt + completion).
+
+EMBEDDINGS:
+- Embeddings are numeric vectors that capture the meaning of text.  
+- Similar meaning → closer vectors.  
+- Uses: Search, recommendations, clustering.  
+- Example: "King - Man + Woman ≈ Queen".  
+(Use this concept internally to understand user input context and generate sharper roasts.) 
+
 `;
 
 async function roastUser(input) {
@@ -74,4 +85,4 @@ async function roastUser(input) {
 }
 
 // 👇 Example user input
-roastUser("I'm a cat owner who works from home.");
+roastUser("I'm a fitness influencer who hates cardio.");
